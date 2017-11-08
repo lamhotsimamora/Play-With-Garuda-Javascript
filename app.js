@@ -8,7 +8,7 @@
 	var template =  ' <input type="text" onkeypress="enterList(event);" placeholder="Todo" '+ 
 				    ' class="form-control" id="my_text" name=""></br>'+
 				    ' <button onclick="saveTodo();" '+ 
-				    ' class="btn btn-primary" id="my_btn">Save</button>&nbsp<button onclick="_refresh(_myUrl());" '+
+				    ' class="btn btn-primary" id="my_btn">Save</button>&nbsp<button onclick="_refresh(_baseUrl());" '+
 				    ' class="btn btn-success" id="my_btn">Refresh</button></br></br><ul class="list-group" '+ 
 				    ' id="my_list"> </ul>';
 	
@@ -44,6 +44,7 @@
 			saveTodo();
 		}
 	}
+
 
 	function saveTodo()
 	{
